@@ -37,7 +37,9 @@ const UserCard: any = ({
       const allUsers = users.filter((user) => user._id !== id);
       setUsers(allUsers);
       setFilteredUsers(allUsers);
-    } catch (error) {}
+    } catch (error) {
+      console.error("Failed to delete user", error);
+    }
   };
 
   const handleCancelClick = () => {
