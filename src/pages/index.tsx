@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import UserForm from "@/components/userform";
 import UserCard from "@/components/userCard";
-import Filter from "@/components/userFilter";
+import userFilter from "@/components/userFilter";
 import api from "@/services/api";
 
 interface UserProps {

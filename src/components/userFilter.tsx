@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Filter = ({ users, setFilteredUsers }) => {
+const userFilter = ({ users, setFilteredUsers }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (e) => {
@@ -27,4 +27,4 @@ const Filter = ({ users, setFilteredUsers }) => {
   );
 };
 
-export default Filter;
+export default userFilter;
